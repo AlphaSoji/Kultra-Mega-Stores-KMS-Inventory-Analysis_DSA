@@ -47,6 +47,9 @@ ii) **Exploratory Data Analysis(EDA)**
 
 ### Case Scenario I: 
 
+***SQL Query file for Scenario I***
+
+
 ***a)	Which product category had the highest sales?***
 
     ```SELECT TOP 1 
