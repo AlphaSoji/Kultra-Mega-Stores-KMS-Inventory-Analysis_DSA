@@ -311,6 +311,15 @@ op sales small business customer.csv…]()
 
 ***c)	Which Corporate Customer placed the most number of orders in 2009 – 2012?***
 
+	```SELECT TOP 1 Customer_Name, Order_Quantity, Customer_Segment
+	   FROM 
+    		KMS
+	   WHERE 
+    		Customer_Segment = 'Corporate' AND YEAR(Order_date) BETWEEN 2009 AND 2012
+	   ORDER BY 
+    		Order_Quantity Desc```
+
+      
 
 ***d)	Which consumer customer was the most profitable one?***
 ***e)	Which customer returned items, and what segment do they belong to?***
