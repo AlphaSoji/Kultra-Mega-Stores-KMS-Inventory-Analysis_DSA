@@ -172,7 +172,10 @@ lower-end customers through Promotions that that offer more discounts(Price and 
 t expensive Ship Mode.csv…]()
 
 ### Case Scenario II:
+
 ***a)	Who are the most valuable customers, and what products or services do they typically purchase?***
+
+	
 ***b)	Which small business customer had the highest sales?***
 ***c)	Which Corporate Customer placed the most number of orders in 2009 – 2012?***
 ***d)	Which consumer customer was the most profitable one?***
