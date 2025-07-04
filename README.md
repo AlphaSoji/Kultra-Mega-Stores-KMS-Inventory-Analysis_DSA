@@ -1,4 +1,4 @@
-[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
+[Top sales small business customer.csv](https://github.com/user-attachments/files/21059947/Top.sales.small.business.customer.csv)[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
 
 ## Project Overview:
 
@@ -179,9 +179,139 @@ t expensive Ship Mode.csv…]()
 
 ***a)	Who are the most valuable customers, and what products or services do they typically purchase?***
 
-	
+  ***Top 10 Most valuable***
+	```SELECT TOP 10
+    		customer_name,
+    		SUM(sales) AS Total_customer_sales
+	   FROM
+    		KMS
+	   GROUP BY
+    		customer_name
+	   ORDER BY
+   		total_customer_sales DESC```
+
+   - customer_name	Total_customer_sales
+	Emily Phan	117124.43
+	Deborah Brumfield	97433.14
+	Roy Skaria	92542.16
+	Sylvia Foulston	88875.76
+	Grant Carroll	88417.00
+	Alejandro Grove	83561.93
+	Darren Budd	81577.35
+	Julia Barnett	80044.46
+	John Lucas	79696.19
+	Liz MacKendrick	76306.43
+   - [Uploading TopEmily Phan,117124.43
+Deborah Brumfield,97433.14
+Roy Skaria,92542.16
+Sylvia Foulston,88875.76
+Grant Carroll,88417.00
+Alejandro Grove,83561.93
+Darren Budd,81577.35
+Julia Barnett,80044.46
+John Lucas,79696.19
+Liz MacKendrick,76306.43
+ 20 highest sales by Customers.csv…]()
+
+  ***Typical Products purchase by Top 10 Customers***
+
+	```SELECT
+    		Customer_Name,
+    		product_Category,
+    		SUM(sales) AS Customer_Sales_by_Category,
+    		COUNT(*) AS Orders_in_category
+	   FROM
+    		KMS
+	   WHERE
+    		customer_name IN ('Emily Phan', 'Deborah Brumfield', 'Roy Skaria', 'Sylvia Foulston', 'Grant Carroll', 'Alejandro Grove',
+						'Darren Budd','Julia Barnett','John Lucas','Liz MacKendrick')
+	   GROUP BY
+    		Customer_Name,
+    		Product_Category
+	   ORDER BY
+    		Customer_Name,
+    		Customer_Sales_by_Category DESC;```
+
+	Customer_Name	product_Category	Customer_Sales_by_Category	Orders_in_category
+	Alejandro Grove	Office Supplies	51696.02	8
+	Alejandro Grove	Furniture	31865.91	6
+	Darren Budd	Furniture	43367.21	32
+	Darren Budd	Technology	38210.14	9
+	Deborah Brumfield	Technology	76795.80	8
+	Deborah Brumfield	Furniture	12809.62	4
+	Deborah Brumfield	Office Supplies	7827.72	8
+	Emily Phan	Technology	110481.96	4
+	Emily Phan	Furniture	4011.65	1
+	Emily Phan	Office Supplies	2630.82	5
+	Grant Carroll	Office Supplies	50837.27	15
+	Grant Carroll	Furniture	29826.85	5
+	Grant Carroll	Technology	7752.88	7
+	John Lucas	Furniture	44090.34	4
+	John Lucas	Office Supplies	25818.99	9
+	John Lucas	Technology	9786.86	5
+	Julia Barnett	Furniture	46359.63	7
+	Julia Barnett	Office Supplies	16925.45	10
+	Julia Barnett	Technology	16759.38	4
+	Liz MacKendrick	Technology	33457.21	6
+	Liz MacKendrick	Office Supplies	22346.10	8
+	Liz MacKendrick	Furniture	20503.12	6
+	Roy Skaria	Furniture	50177.24	8
+	Roy Skaria	Technology	30349.40	6
+	Roy Skaria	Office Supplies	12015.52	12
+	Sylvia Foulston	Furniture	48173.38	10
+	Sylvia Foulston	Technology	29669.04	5
+	Sylvia Foulston	Office Supplies	11033.34	9
+   
+    - [Uploading ToAlejandro Grove,Office Supplies,51696.02,8
+Alejandro Grove,Furniture,31865.91,6
+Darren Budd,Furniture,43367.21,32
+Darren Budd,Technology,38210.14,9
+Deborah Brumfield,Technology,76795.80,8
+Deborah Brumfield,Furniture,12809.62,4
+Deborah Brumfield,Office Supplies,7827.72,8
+Emily Phan,Technology,110481.96,4
+Emily Phan,Furniture,4011.65,1
+Emily Phan,Office Supplies,2630.82,5
+Grant Carroll,Office Supplies,50837.27,15
+Grant Carroll,Furniture,29826.85,5
+Grant Carroll,Technology,7752.88,7
+John Lucas,Furniture,44090.34,4
+John Lucas,Office Supplies,25818.99,9
+John Lucas,Technology,9786.86,5
+Julia Barnett,Furniture,46359.63,7
+Julia Barnett,Office Supplies,16925.45,10
+Julia Barnett,Technology,16759.38,4
+Liz MacKendrick,Technology,33457.21,6
+Liz MacKendrick,Office Supplies,22346.10,8
+Liz MacKendrick,Furniture,20503.12,6
+Roy Skaria,Furniture,50177.24,8
+Roy Skaria,Technology,30349.40,6
+Roy Skaria,Office Supplies,12015.52,12
+Sylvia Foulston,Furniture,48173.38,10
+Sylvia Foulston,Technology,29669.04,5
+Sylvia Foulston,Office Supplies,11033.34,9
+p 10 Customers and Typical products.csv…]()
+
 ***b)	Which small business customer had the highest sales?***
+
+    ```SELECT TOP 1 
+    		Customer_Name, Order_Quantity, Sales	
+       FROM 
+       		KMS
+       WHERE 
+       		Customer_Segment = 'Small Business'
+       ORDER BY 
+       		Sales```
+
+  - Customer_Name	Order_Quantity	Sales
+	Ken Dana	1	3.20
+  - [Uploading TKen Dana,3553,25318,2011-11-19,Critical,1,3.20,0.09,Regular Air,-3.16,1.88,1.49,Ken Dana,Alberta,West,Small Business,Office Supplies,Binders and Binder Accessories,Staples® General Use 3-Ring Binders,Small Box,0.37,2011-11-21
+op sales small business customer.csv…]()
+
+
 ***c)	Which Corporate Customer placed the most number of orders in 2009 – 2012?***
+
+
 ***d)	Which consumer customer was the most profitable one?***
 ***e)	Which customer returned items, and what segment do they belong to?***
 ***f)	If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the companyappropriately spent shipping costs based on the Order Priority? Explain your answer!!***
