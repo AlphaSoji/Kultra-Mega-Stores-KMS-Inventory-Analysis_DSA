@@ -1,4 +1,4 @@
-[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
+[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
 
 ## Project Overview:
 
@@ -151,7 +151,26 @@ Rick Huthwaite,415.82
 Mark Hamilton,450.99
 ng bottom 10 customers.csv…]()
 
+The only factor that apper to have a relationship with Sales is the Unit Price and Shipping_Cost. KMS can encourage the 
+lower-end customers through Promotions that that offer more discounts(Price and Quantity Discounts, lower prices and Free Shipping).
+
 ***e)	KMS incurred the most shipping cost using which shipping method?***
+
+	```SELECT TOP 1
+    		ship_mode,
+    		SUM(shipping_cost) AS total_shipping_cost
+	   FROM
+   		 KMS
+	   GROUP BY
+    		 ship_mode
+	   ORDER BY
+    		 total_shipping_cost DESC```
+
+   - ship_mode	total_shipping_cost
+	Delivery Truck	51971.94
+   - [Uploading MosDelivery Truck,51971.94
+t expensive Ship Mode.csv…]()
+
 ### Case Scenario II:
 ***a)	Who are the most valuable customers, and what products or services do they typically purchase?***
 ***b)	Which small business customer had the highest sales?***
