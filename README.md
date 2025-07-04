@@ -49,7 +49,8 @@ ii) **Exploratory Data Analysis(EDA)**
 
 ***SQL Query file for Scenario I***
 
-
+	- https://github.com/AlphaSoji/Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA/blob/main/SQLQuery_CaseScenario_I.sql
+ 
 ***a)	Which product category had the highest sales?***
 
     ```SELECT TOP 1 
