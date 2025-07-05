@@ -39,11 +39,6 @@ SELECT Product_Sub_Category, SUM(Sales) AS Product_Sales
 FROM KMS
 GROUP BY Product_Sub_Category
 
-----Province sales
-
-SELECT Province, SUM(Sales) AS Provincial_Sales
-FROM KMS
-GROUP BY Province
 
 ----Ontario Appliances sales
 
@@ -110,15 +105,10 @@ ORDER BY Unit_Price Desc
 
 ----e)	KMS incurred the most shipping cost using which shipping method?
 
-SELECT TOP 1
-    ship_mode,
-    SUM(shipping_cost) AS total_shipping_cost
-FROM
-    KMS
-GROUP BY
-    ship_mode
-ORDER BY
-    total_shipping_cost DESC
-
+SELECT TOP 1 
+	Ship_Mode, SUM(Shipping_Cost) AS Total_Shipping_Cost
+FROM KMS
+GROUP BY Ship_Mode
+ORDER BY Total_Shipping_Cost Desc
 
 SELECT * FROM KMS
