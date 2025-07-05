@@ -236,45 +236,35 @@ t expensive Ship Mode.csv…]()
 	   ORDER BY
    		total_customer_sales DESC```
 
-   - customer_name	Total_customer_sales
-	Emily Phan	117124.43
-	Deborah Brumfield	97433.14
-	Roy Skaria	92542.16
-	Sylvia Foulston	88875.76
-	Grant Carroll	88417.00
-	Alejandro Grove	83561.93
-	Darren Budd	81577.35
-	Julia Barnett	80044.46
-	John Lucas	79696.19
-	Liz MacKendrick	76306.43
-   - [Uploading TopEmily Phan,117124.43
-Deborah Brumfield,97433.14
-Roy Skaria,92542.16
-Sylvia Foulston,88875.76
-Grant Carroll,88417.00
-Alejandro Grove,83561.93
-Darren Budd,81577.35
-Julia Barnett,80044.46
-John Lucas,79696.19
-Liz MacKendrick,76306.43
- 20 highest sales by Customers.csv…]()
 
-  ***Typical Products purchase by Top 10 Customers***
+|customer_name|	Total_customer_sales|
+|:------------|---------------|
+|Emily Phan	|117124.43|
+|Deborah Brumfield|	97433.14|
+|Roy Skaria	|92542.16|
+|Sylvia Foulston|	88875.76|
+|Grant Carroll	|88417.00|
+|Alejandro Grove|	83561.93|
+|Darren Budd	|81577.35|
+|Julia Barnett	|80044.46|
+|John Lucas	|79696.19|
+|Liz MacKendrick|	76306.43|
+
 
 	```SELECT
-    		Customer_Name,
+   		Customer_Name,
     		product_Category,
     		SUM(sales) AS Customer_Sales_by_Category,
-    		COUNT(*) AS Orders_in_category
-	   FROM
-    		KMS
-	   WHERE
+   		 COUNT(*) AS Orders_in_category
+	  FROM
+   		 KMS
+	  WHERE
     		customer_name IN ('Emily Phan', 'Deborah Brumfield', 'Roy Skaria', 'Sylvia Foulston', 'Grant Carroll', 'Alejandro Grove',
 						'Darren Budd','Julia Barnett','John Lucas','Liz MacKendrick')
-	   GROUP BY
+	  GROUP BY
     		Customer_Name,
     		Product_Category
-	   ORDER BY
+	  ORDER BY
     		Customer_Name,
     		Customer_Sales_by_Category DESC;```
 
