@@ -378,18 +378,5 @@ est profit consumer customer.csv…]()
 
 **Summary and recommendations**
 
-ii. Also use the Dashboard to develop a write up or presentation to explain and present your insights and finish with recommendations.
 
-
-
-Project Process: 
-
-
-2.	ANALYSE:
-
-
-3.	CONSTRUCT:
-
-4.	EXECUTE:
-iii. Upload Queries and export results into Excel or Power BI for Explanations.
 
