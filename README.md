@@ -85,8 +85,13 @@ ii) **Exploratory Data Analysis(EDA)**
         ORDER BY 
 	          Product_Category Desc```
 
--  [Uploading top selling.csv…]Technology,89061.05
-()
+-  Result
+
+|Product_Category |Highest_Selling_Product|
+|-----------------|--------------------|
+|Technology |	89061.05|
+
+The highest selling product category is Technology ar $89,061.05.
 
 ***b)	What are the Top 3 and Bottom 3 regions in terms of sales?***
 
