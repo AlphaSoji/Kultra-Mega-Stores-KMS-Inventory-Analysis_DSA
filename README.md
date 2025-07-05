@@ -1,4 +1,4 @@
-[highest profit consumer customer.csv](https://github.com/user-attachments/files/21060142/highest.profit.consumer.customer.csv)[highest order in corporate customer.csv](https://github.com/user-attachments/files/21060110/highest.order.in.corporate.customer.csv)[Top sales small business customer.csv](https://github.com/user-attachments/files/21059947/Top.sales.small.business.customer.csv)[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
+	[highest profit consumer customer.csv](https://github.com/user-attachments/files/21060142/highest.profit.consumer.customer.csv)[highest order in corporate customer.csv](https://github.com/user-attachments/files/21060110/highest.order.in.corporate.customer.csv)[Top sales small business customer.csv](https://github.com/user-attachments/files/21059947/Top.sales.small.business.customer.csv)[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
 
 ## Project Overview:
 
@@ -341,9 +341,34 @@ highest order in corporate customer.csv…]()
  	- [Uploading highEmily Phan,27220.69,Consumer
 est profit consumer customer.csv…]()
 
-***e)	Which customer returned items, and what segment do they belong to?***
+***e)	Which customers returned items, and what segment do they belong to?***
 
+	```SELECT DISTINCT
+   		K.Customer_Name,
+   		K.Customer_Segment
+	   FROM
+    		KMS AS K
+	   JOIN
+    		Order_Status AS O ON K.order_id = O.order_id
+	    WHERE
+    		O.status = 'Returned';```
 
+      419 customers returned various items accross 4 segements: Corporate, Home Office, Consumer and Small Business.
+
+      ```SELECT DISTINCT
+    		K.Customer_Segment
+	 FROM
+    		KMS AS K
+	 JOIN
+    		Order_Status AS O ON K.order_id = O.order_id
+	WHERE
+    		O.status = 'Returned';
+
+      - Customer_Segment
+	Corporate
+	Home Office
+	Consumer
+	Small Business
 ***f)	If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the companyappropriately spent shipping costs based on the Order Priority? Explain your answer!!***
 ### 5.	EXECUTE:
 **i.  DashBoard** 
