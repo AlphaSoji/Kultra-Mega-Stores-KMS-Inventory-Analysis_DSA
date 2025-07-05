@@ -63,7 +63,6 @@ b) Set Datatypes accordingly ( particularly for Orderid, Margin and Profit colum
        ALTER COLUMN Unit_Price DECIMAL (10,2)
        ALTER TABLE KMS
        ALTER COLUMN Shipping_Cost DECIMAL (10,2)
-ii) **Exploratory Data Analysis(EDA)**
    
 ### 3.	CONSTRUCT:
 
@@ -104,14 +103,15 @@ The highest selling product category is Technology ar $89,061.05.
           Region
        ORDER BY 
            Region Asc```
-   - Region	Regional_Sales_Performance
-      Atlantic	89061.05
-      Northwest Territories	26133.39
-      Nunavut	14223.82
-   - [Uploading top 3 by Atlantic,89061.05
-Northwest Territories,26133.39
-Nunavut,14223.82
-region.csv…]()
+
+|Region	|Regional_Sales_Performance|
+|--------|---------|
+|Atlantic|	89061.05|
+|Northwest Territories|	26133.39|
+|Nunavut|14223.82|
+
+      
+- The 3 highest selling regions are: Atlantic $89,061.o5, Northwest Territories $26,133.39, Nunavut $14,223.82.
 
 ***- Bottom 3 Sales By Region.***
 
@@ -123,10 +123,15 @@ region.csv…]()
        ORDER BY 
            Region Desc```
            
-  - Region|	Regional_Sales_Performance
-    Yukon|	3.23
-    West	|2.24
-    Quebec|	3.42
+
+|Region|Regional_Sales_Performance|
+|:-------|-------|
+|Yukon|	3.23|
+|West|2.24|
+|Quebec|3.42|
+
+- The 3 lowest selling regions are: Yukon $3.23, West $2.24.39, Quebec $3.42.
+
   - [UploadiYukon,3.23
 West,2.24
 Quebec,3.42
@@ -142,8 +147,11 @@ ng bottom 3 by region.csv…]()
        GROUP BY
            Product_Sub_Category, Province```
 
-- Province	Appliances_Sales
-  Ontario	202346.84
+|Province|	Appliances_Sales|
+|:-------|----------------------|
+  |Ontario|	202346.84|
+
+  
 - [UploadingOntario,202346.84
  Ontario _Appliances_Sales Correct.csv…]()
 
@@ -159,17 +167,19 @@ ng bottom 3 by region.csv…]()
        ORDER BY
           total_customer_sales Asc```
 
-- Customer_Name	total_customer_sales
-  Jeremy Farry	85.72
-  Natalie DeCherney	125.90
-  Nicole Fjeld	153.03
-  Katrina Edelman	180.76
-  Dorothy Dickinson	198.08
-  Christine Kargatis	293.22
-  Eric Murdock	343.33
-  Chris McAfee	350.18
-  Rick Huthwaite	415.82
-  Mark Hamilton	450.99
+
+|Customer_Name	|total_customer_sales|
+|:--------------|------------------|
+| Jeremy Farry	|85.72|
+  |Natalie DeCherney|	125.90|
+  |Nicole Fjeld	|153.03|
+ | Katrina Edelman|	180.76|
+ | Dorothy Dickinson|	198.08|
+  |Christine Kargatis|	293.22|
+ | Eric Murdock|	343.33|
+ | Chris McAfee|	350.18|
+ |Rick Huthwaite|	415.82|
+  |Mark Hamilton|	450.99|
 
 - [UploadiJeremy Farry,85.72
 Natalie DeCherney,125.90
@@ -198,12 +208,20 @@ lower-end customers through Promotions that that offer more discounts(Price and 
 	   ORDER BY
     		 total_shipping_cost DESC```
 
-   - ship_mode	total_shipping_cost
-	Delivery Truck	51971.94
+|ship_mode|	total_shipping_cost|
+|:--------|------------------|
+|Delivery Truck|	51971.94|
+
+- KMS incured the most shipping cost using the Delivery Truck method, $51,971.94.
+  
    - [Uploading MosDelivery Truck,51971.94
 t expensive Ship Mode.csv…]()
 
 ### Case Scenario II:
+
+***SQL Query file for Scenario II***
+
+
 
 ***a)	Who are the most valuable customers, and what products or services do they typically purchase?***
 
