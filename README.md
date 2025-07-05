@@ -1,4 +1,24 @@
-	[highest profit consumer customer.csv](https://github.com/user-attachments/files/21060142/highest.profit.consumer.customer.csv)[highest order in corporate customer.csv](https://github.com/user-attachments/files/21060110/highest.order.in.corporate.customer.csv)[Top sales small business customer.csv](https://github.com/user-attachments/files/21059947/Top.sales.small.business.customer.csv)[Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)[bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)[Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)[bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)[top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)[top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
+[highest profit consumer.csv](https://github.com/user-attachments/files/21060142/highest.profit.consumer.customer.csv)
+ 
+ [highest order in corporate customer.csv](https://github.com/user-attachments/files/21060110/highest.order.in.corporate.customer.csv)
+ 
+ [Top sales small business customer.csv](https://github.com/user-attachments/files/21059947/Top.sales.small.business.customer.csv)
+ 
+ [Most expensive Ship Mode.csv](https://github.com/user-attachments/files/21058660/Most.expensive.Ship.Mode.csv)
+ 
+ [bottom 10 customers.csv](https://github.com/user-attachments/files/21058087/bottom.10.customers.csv)
+ 
+ [Ontario _Appliances_Sales Correct.csv](https://github.com/user-attachments/files/21057842/Ontario._Appliances_Sales.Correct.csv)
+ 
+ [bottom 3 by region.csv](https://github.com/user-attachments/files/21057683/bottom.3.by.region.csv)
+ 
+ [top 3 by region.csv](https://github.com/user-attachments/files/21057580/top.3.by.region.csv)
+ 
+ [top 3 by region.csv](https://github.com/user-attachments/files/21057566/top.3.by.region.csv)
+ 
+ [top 3 by region.csv](https://github.com/user-attachments/files/21057556/top.3.by.region.csv)
+ 
+ [top selling.csv](https://github.com/user-attachments/files/21057146/top.selling.csv)# Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA
 
 ## Project Overview:
 
@@ -49,7 +69,8 @@ ii) **Exploratory Data Analysis(EDA)**
 
 ***SQL Query file for Scenario I***
 
-	- https://github.com/AlphaSoji/Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA/blob/main/SQLQuery_CaseScenario_I.sql
+[Case_Scenario I SQL Query](https://github.com/AlphaSoji/Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA/blob/main/SQLQuery_CaseScenario_I.sql)
+
  
 ***a)	Which product category had the highest sales?***
 
