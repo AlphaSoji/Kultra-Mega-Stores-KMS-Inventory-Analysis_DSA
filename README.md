@@ -221,7 +221,7 @@ t expensive Ship Mode.csv…]()
 
 ***SQL Query file for Scenario II***
 
-
+[Scenario II SQL File](https://github.com/AlphaSoji/Kultra-Mega-Stores-KMS-Inventory-Analysis_DSA/blob/main/SQLQuery_CaseScenario_II.sql)
 
 ***a)	Who are the most valuable customers, and what products or services do they typically purchase?***
 
