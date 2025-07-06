@@ -250,6 +250,9 @@ t expensive Ship Mode.csv…]()
 |John Lucas	|79696.19|
 |Liz MacKendrick|	76306.43|
 
+The top 10 most valuable customers by total sales are: Emily Phan, Deborah Brumfield, Roy Skaria, Sylvia Foulston,
+Grant Carroll, Alejandro Grove, Darren Budd, Julia Barnett, John Lucas, Liz MacKendrick.
+
 
 	```SELECT
    		Customer_Name,
@@ -259,8 +262,9 @@ t expensive Ship Mode.csv…]()
 	  FROM
    		 KMS
 	  WHERE
-    		customer_name IN ('Emily Phan', 'Deborah Brumfield', 'Roy Skaria', 'Sylvia Foulston', 'Grant Carroll', 'Alejandro Grove',
-						'Darren Budd','Julia Barnett','John Lucas','Liz MacKendrick')
+    		customer_name IN ('Emily Phan', 'Deborah Brumfield', 'Roy Skaria', 'Sylvia Foulston', 
+      				  'Grant Carroll', 'Alejandro Grove',
+				'Darren Budd','Julia Barnett','John Lucas','Liz MacKendrick')
 	  GROUP BY
     		Customer_Name,
     		Product_Category
@@ -268,65 +272,41 @@ t expensive Ship Mode.csv…]()
     		Customer_Name,
     		Customer_Sales_by_Category DESC;```
 
-	Customer_Name	product_Category	Customer_Sales_by_Category	Orders_in_category
-	Alejandro Grove	Office Supplies	51696.02	8
-	Alejandro Grove	Furniture	31865.91	6
-	Darren Budd	Furniture	43367.21	32
-	Darren Budd	Technology	38210.14	9
-	Deborah Brumfield	Technology	76795.80	8
-	Deborah Brumfield	Furniture	12809.62	4
-	Deborah Brumfield	Office Supplies	7827.72	8
-	Emily Phan	Technology	110481.96	4
-	Emily Phan	Furniture	4011.65	1
-	Emily Phan	Office Supplies	2630.82	5
-	Grant Carroll	Office Supplies	50837.27	15
-	Grant Carroll	Furniture	29826.85	5
-	Grant Carroll	Technology	7752.88	7
-	John Lucas	Furniture	44090.34	4
-	John Lucas	Office Supplies	25818.99	9
-	John Lucas	Technology	9786.86	5
-	Julia Barnett	Furniture	46359.63	7
-	Julia Barnett	Office Supplies	16925.45	10
-	Julia Barnett	Technology	16759.38	4
-	Liz MacKendrick	Technology	33457.21	6
-	Liz MacKendrick	Office Supplies	22346.10	8
-	Liz MacKendrick	Furniture	20503.12	6
-	Roy Skaria	Furniture	50177.24	8
-	Roy Skaria	Technology	30349.40	6
-	Roy Skaria	Office Supplies	12015.52	12
-	Sylvia Foulston	Furniture	48173.38	10
-	Sylvia Foulston	Technology	29669.04	5
-	Sylvia Foulston	Office Supplies	11033.34	9
+
+|Customer_Name	|product_Category	|Customer_Sales_by_Category	|Orders_in_category|
+|:----------------|-------------------|------------------------------|---------------------|
+|Alejandro Grove	|Office Supplies	|51696.02|	8|
+|Alejandro Grove	|Furniture	|31865.91|	6|
+|Darren Budd	|Furniture	|43367.21	|32|
+|Darren Budd	|Technology	|38210.14|	9|
+|Deborah Brumfield	|Technology	|76795.80|	8|
+|Deborah Brumfield	|Furniture|	12809.62|	4|
+|Deborah Brumfield	|Office Supplies	|7827.72|	8|
+|Emily Phan	|Technology	|110481.96|	4|
+|Emily Phan	|Furniture	|4011.65|	1|
+|Emily Phan	|Office Supplies	|2630.82	|5|
+|Grant Carroll	|Office Supplies	|50837.27|	15|
+|Grant Carroll	|Furniture|	29826.85|	5|
+|Grant Carroll	|Technology	|7752.88	|7|
+|John Lucas	|Furniture	|44090.34|	4|
+|John Lucas	|Office Supplies	|25818.99|	9|
+|John Lucas	|Technology	|9786.86|	5|
+|Julia Barnett|	Furniture	|46359.63|	7|
+|Julia Barnett	|Office Supplies|	16925.45|	10|
+|Julia Barnett	|Technology|	16759.38|	4|
+|Liz MacKendrick|	Technology|	33457.21	|6|
+|Liz MacKendrick|	Office Supplies	|22346.10	|8|
+|Liz MacKendrick|	Furniture|	20503.12	|6|
+|Roy Skaria	|Furniture|	50177.24	|8|
+|Roy Skaria	|Technology	|30349.40|	6|
+|Roy Skaria	|Office Supplies|	12015.52	|12|
+|Sylvia Foulston|	Furniture	|48173.38|	10|
+|Sylvia Foulston|	Technology|	29669.04|	5|
+|Sylvia Foulston|	Office Supplies|	11033.34|	9|
+
+The products these top 10 most valuable customers typically purchase are mainly: Office Supplies, Furniture 
+and Technology with Technology recording the highest purchase.
    
-    - [Uploading ToAlejandro Grove,Office Supplies,51696.02,8
-Alejandro Grove,Furniture,31865.91,6
-Darren Budd,Furniture,43367.21,32
-Darren Budd,Technology,38210.14,9
-Deborah Brumfield,Technology,76795.80,8
-Deborah Brumfield,Furniture,12809.62,4
-Deborah Brumfield,Office Supplies,7827.72,8
-Emily Phan,Technology,110481.96,4
-Emily Phan,Furniture,4011.65,1
-Emily Phan,Office Supplies,2630.82,5
-Grant Carroll,Office Supplies,50837.27,15
-Grant Carroll,Furniture,29826.85,5
-Grant Carroll,Technology,7752.88,7
-John Lucas,Furniture,44090.34,4
-John Lucas,Office Supplies,25818.99,9
-John Lucas,Technology,9786.86,5
-Julia Barnett,Furniture,46359.63,7
-Julia Barnett,Office Supplies,16925.45,10
-Julia Barnett,Technology,16759.38,4
-Liz MacKendrick,Technology,33457.21,6
-Liz MacKendrick,Office Supplies,22346.10,8
-Liz MacKendrick,Furniture,20503.12,6
-Roy Skaria,Furniture,50177.24,8
-Roy Skaria,Technology,30349.40,6
-Roy Skaria,Office Supplies,12015.52,12
-Sylvia Foulston,Furniture,48173.38,10
-Sylvia Foulston,Technology,29669.04,5
-Sylvia Foulston,Office Supplies,11033.34,9
-p 10 Customers and Typical products.csv…]()
 
 ***b)	Which small business customer had the highest sales?***
 
@@ -339,8 +319,12 @@ p 10 Customers and Typical products.csv…]()
        ORDER BY 
        		Sales```
 
-  - Customer_Name	Order_Quantity	Sales
-	Ken Dana	1	3.20
+|Customer_Name	|Order_Quantity	|Sales|
+|:--------------|--------------|-------|
+|Ken Dana|	1|	3.20|
+
+- The Small business customer that had the highest sale was Ken Dana with order quantity of 1.
+
   - [Uploading TKen Dana,3553,25318,2011-11-19,Critical,1,3.20,0.09,Regular Air,-3.16,1.88,1.49,Ken Dana,Alberta,West,Small Business,Office Supplies,Binders and Binder Accessories,Staples® General Use 3-Ring Binders,Small Box,0.37,2011-11-21
 op sales small business customer.csv…]()
 
@@ -356,8 +340,13 @@ op sales small business customer.csv…]()
     		Order_Quantity Desc```
 
       
-   - Customer_Name	Order_Quantity	Customer_Segment
-	Barry Weirich	50	Corporate
+|Customer_Name|	Order_Quantity|	Customer_Segment|
+|:------------|---------------|--------------|
+|Barry Weirich	|50	      |Corporate|
+
+ The corporate customer that placed the most order between 2009 and 2012 is Barry Weirich with 50 orders.
+
+ 
    - [Uploading Barry Weirich,50,Corporate
 highest order in corporate customer.csv…]()
 
@@ -372,9 +361,13 @@ highest order in corporate customer.csv…]()
 	   ORDER BY 
     		Profit Desc```
 
-	- Customer_Name	Profit	Customer_Segment
-	Emily Phan	27220.69	Consumer
- 	- [Uploading highEmily Phan,27220.69,Consumer
+|Customer_Name	|Profit	|Customer_Segment|
+|:-------------|---------|----------------|
+|Emily Phan|	27220.69|	Consumer|
+
+The most profitable Consumer segment customer was Emily Phan with a profit of $27,220.69.
+
+ [Uploading highEmily Phan,27220.69,Consumer
 est profit consumer customer.csv…]()
 
 ***e)	Which customers returned items, and what segment do they belong to?***
@@ -389,7 +382,7 @@ est profit consumer customer.csv…]()
 	    WHERE
     		O.status = 'Returned';```
 
-      419 customers returned various items accross 4 segements: Corporate, Home Office, Consumer and Small Business.
+      A total of 419 customers returned various items accross 4 segements: Corporate, Home Office, Consumer and Small Business.
 
       ```SELECT DISTINCT
     		K.Customer_Segment
@@ -400,19 +393,59 @@ est profit consumer customer.csv…]()
 	WHERE
     		O.status = 'Returned';
 
-      - Customer_Segment
-	Corporate
-	Home Office
-	Consumer
-	Small Business
+|Customer_Segment|
+|:-----------|
+|Corporate|
+|Home Office|
+|Consumer|
+|Small Business|
+
+The customers belonged to Corporate, Home Office, Consumer and Small Business segments.
+
 ***f)	If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the companyappropriately spent shipping costs based on the Order Priority? Explain your answer!!***
-### 5.	EXECUTE:
-**i.  DashBoard** 
 
+	```SELECT
+    		order_priority,
+    		ship_mode,
+    		SUM(shipping_cost) AS Total_shipping_cost_BY_priorityMode,
+    		COUNT(order_id) AS OrdersCount_by_priorityAndship_mode
+	   FROM
+   		 KMS
+	   GROUP BY
+   		 order_priority,
+    		ship_mode
+	   ORDER BY
+		Order_Priority Asc,
+    		Total_shipping_cost_BY_priorityMode DESC```
 
-**Transformed Dataset**
+|order_priority|	ship_mode|	Total_shipping_cost_BY_priorityMode|	OrdersCount_by_priorityAndship_mode|
+|:-------------|-----------------|-----------------------------------------|---------------------------------------|
+|Critical	|Delivery Truck|	10783.82|	228|
+|Critical	|Regular Air	|8586.76	|1180|
+|Critical	|Express Air	|1742.10	|200|
+|High|	Delivery Truck	|11206.88|	248|
+|High|	Regular Air	|10005.01|	1308|
+|High|	Express Air	|1453.53|	|212|
+|Low	|Delivery Truck	|11131.61|	250|
+|Low|	Regular Air	|10263.62|	1280|
+|Low	|Express Air	|1551.63|	190|
+|Medium|Delivery Truck|	9461.62|	205|
+|Medium|	Regular Air|	9418.72|	1225|
+|Medium	|Express Air	|1633.59	|201|
+|Not Specified	|Regular Air	|9734.08|	1277|
+|Not Specified|	Delivery Truck	|9388.01|	215|
+|Not Specified	|Express Air|	1470.06	|180|
 
-**Summary and recommendations**
+The company did not appropriately spend the shipping in terms of the Order Priorities for the following reasons:
+- Delivery Truck recorded the highest cost in all the Order Priority segements.
+- This is inspite of the fact that Delivery truck is supposed to be the cheapest Ship mode.
+- It must also be pointed out that the Order Count attributable to Delivery truck was not the highest, yet it recorded the highest cost.
+- On the other hand, Regular Air mode which cost more than Delivery truck recorded the highest order count but less total cost.
+Clearly, from the foregoing, we can conclude that the company grossly mismanaged the shipping cost budget.
+
+### RECOMMENDATIONS:
+
+The company should develop a better plan for collating orders and organizing deliveries to minimize the shipping cost
 
 
 
